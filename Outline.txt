@@ -1,0 +1,107 @@
+Hiator and discovery motor cortex
+
+(lesions and stim)
+ 
+Reveal difference across mammals in terms of execution overt behaviour
+
+Why is this?
+- Anatomical suibstrate (CS/Pyrmaidla0
+
+
+
+Physiology suggests...is active for all movement but onlyu seems beded for some? why?
+
+
+Is this everything? Is this satisfying?
+
+- There is a loto fo toehr anatomy to explain...for coretx to influence movement...
+- Robots ahve anothe rprobelsm...
+
+( Physiology suppoorts this that...postuyre correction drive activity, and hummans with stropoked are bad...
+
+Tihis is why we have  motor cortex!
+
+So...going back to the history...tere are anectodotal "clues"...
+
+let's test this.
+
+- - - - 
+
+(Intro paragraph) (ARK)
+
+[Box: Motor cortex definition..."motor cortical areas"]
+
+[History]
+How did we discover motor cortex? (GL)
+ - Stim and Lesion standard story (Fritsch, Hitzig...Jackson)
+ - GoltzFerrier
+ - Already a dog primate dillema! (despite remembered as a Ferrier victory)...why does the role seem different in different mammals?
+(other lesions...includiong rats)
+
+
+[Physiology]
+Do we get some clues from Physiology? Not only does htephysiology not make things cleaer...it does not recapitualte the species differences in lesion effects...clues from anatomy?
+Physiology! (motor cortical activity seems to follow most movements of the animal, but that activity is not necessary to generate those movements) (GL)
+ - Why do Cats walk fine after the region with lost of activity relating to walking is removed?
+
+
+[Anatomical substrate for species differences]
+Anatomical substrate: (GL)
+  - This discrepenacy was noted by others and a lot of work tried to explain.
+  - Pyramidial tract differences...rats vs primates (ratio of dorso ventral projections, targeting motor neurons, etc...)
+(This seems to fit with the degree of overt impairment observed in lower to hogher mammals)...in fact, you only need to leasion to CS to get these effects 
+
+[Pyramidal tract role in "dexterous" movements]
+ - emphasizes a role in "fine" movments...which implies....
+Rats nand Whishaw: (ARK + GL)
+What this implies is that the role for Motor Cortex in lower mammals is very smalls ubset of fine, skilled, dexterous precision movements?---
+
+
+This is where the field is...
+
+ - - -
+(The currently assigned role for MC is not satisifying because it explains a subset of the anatomy and a subset of the motor probelm's facing animals...and, an eays at that.)
+Is this everything? Is this satisfying?
+Motor cortex has many more ways to move the body than the CS!
+- There is alot of other anatomy to explain...many other routes for coretx to influence movement...
+(efference copy)
+(action selection)
+(branching, BS, reticular)
+
+Motor cortex as the output of cortex...
+
+There a more movements that would benefit from hgih-level control onther than factitination of digits!
+- Ue robots as an example (interestingly...this is what is hard...not precsion)
+
+
+(slipping on the stairs while holding a beer vs hot coffee) this is the hard problem...motor cortex seems wonderfully situated
+
+[Quotes]
+- Evidence that we are on the right tract:
+      - Anectdotes!
+
+
+Segue: We need an essay to test robust responses...
+ - - - -
+
+
+
+phd-thesis
+The main body of the thesis in LaTeX
+
+Build environment (Windows)
+
+Based on the instructions at: http://tex.stackexchange.com/questions/43984/using-notepad-with-miktex-on-windows
+
+Install Basic MiKTeX 2.9
+Install SumatraPDF
+Copy the batch file "miktex_to_latex.bat" to the [Notepad++ installation Path]
+Install NppExec plugin
+Open a TeX file on Notepad++, run with F6 and enter the following lines on the popup dialog: NPP_SAVE "" "$(CURRENT_DIRECTORY)" "$(NAME_PART)" "$(NAME_PART).pdf"
+Save script as PDFLaTeX
+Assign Notepad++ plugin command
+For SVG conversion:
+
+Install Inkscape
+Add Inkscape to PATH
+
