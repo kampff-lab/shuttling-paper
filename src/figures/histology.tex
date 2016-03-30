@@ -1,0 +1,16 @@
+\documentclass{standalone}
+\usepackage{tikz}
+\usetikzlibrary[arrows,positioning,matrix]
+
+\begin{document}
+\begin{tikzpicture}
+  \node[draw=none] (example) {\includegraphics[width=0.5\textwidth]{elements/lesionA_viewplate_bregma228-slice33}};
+  \node[draw=none,below=0mm of example] {A};
+  \node[draw=none,right=of example] (volumes) {\includegraphics[width=0.5\textwidth]{elements/lesionvolumes}};
+  \node[draw=none,below=0mm of volumes] {B};
+  \node[draw=none,below=of example] (big) {\includegraphics[width=0.5\textwidth]{elements/histology_big}};
+  \node[draw=none,below=0mm of big] {C};
+  \node[draw=none,below=of volumes] (small) {\includegraphics[width=0.5\textwidth]{elements/histology_small}};
+  \node[draw=none,below=0mm of small] {D};
+\end{tikzpicture}
+\end{document}

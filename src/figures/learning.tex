@@ -1,0 +1,14 @@
+\documentclass{standalone}
+\usepackage{tikz}
+\usetikzlibrary[arrows,positioning,matrix]
+
+\begin{document}
+\begin{tikzpicture}
+  \node[draw=none] (timetoreward) {\includegraphics[width=0.33\textwidth]{elements/timetoreward}};
+  \node[draw=none,below=0mm of timetoreward] {A};
+  \node[draw=none,right=1mm of timetoreward] (timetocross) {\includegraphics[width=0.33\textwidth]{elements/timetocross}};
+  \node[draw=none,below=0mm of timetocross] {B};
+  \node[draw=none,right=1mm of timetocross] (habituation) {\includegraphics[width=0.33\textwidth]{elements/timetocross_habituation}};
+  \node[draw=none,below=0mm of habituation] {C};
+\end{tikzpicture}
+\end{document}
