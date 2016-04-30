@@ -7,6 +7,11 @@
 \usepackage[utf8]{inputenc}
 \usepackage{siunitx}
 
+%%% Preprint settings
+\usepackage{setspace}
+\usepackage{lineno}
+\doublespacing
+
 %%% For figures
 \usepackage{tikz}
 \usepackage[mode=buildnew]{standalone}
@@ -20,11 +25,13 @@
 \begin{document}
 \maketitle
 
+\begin{linenumbers}
 \include{sections/mc-intro}
 \include{sections/mc-results}
 \include{sections/mc-discussion}
 \include{sections/mc-methods}
 \include{sections/mc-figures}
+\end{linenumbers}
 \printbibliography
 
 \end{document}
