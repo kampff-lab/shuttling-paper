@@ -16,6 +16,12 @@
 \usepackage{tikz}
 \usepackage[mode=buildnew]{standalone}
 
+%%% For video references
+\newcounter{video}
+\newcommand{\videolabel}[1]{%
+  \refstepcounter{video}\label{#1}%
+}
+
 \title{A robust role for motor cortex}
 
 % bibliography
@@ -26,6 +32,7 @@
 \maketitle
 
 \begin{linenumbers}
+\include{sections/mc-videos}
 \include{sections/mc-intro}
 \include{sections/mc-results}
 \include{sections/mc-discussion}
