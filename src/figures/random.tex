@@ -5,21 +5,21 @@
 \begin{document}
 \begin{tikzpicture}
   \node[draw=none] (randomcontrol) {\includegraphics[width=0.33\textwidth]{elements/randomcontrol}};
-  \node[draw=none,below=0mm of randomcontrol] {A};
+  \node[draw=none,above left=-5mm and -5mm of randomcontrol] {A};
 
   \node[draw=none,right=1mm of randomcontrol] (randombias) {\includegraphics[width=0.33\textwidth]{elements/randombias1}};
-  \node[draw=none,below=0mm of randombias] {B};
+  \node[draw=none,above left=-5mm and -5mm of randombias] {B};
   
   \node[draw=none,right=1mm of randombias] (randombiasplus) {\includegraphics[width=0.33\textwidth]{elements/randombias}};
-  \node[draw=none,below=0mm of randombiasplus] {C};
+  \node[draw=none,above left=-5mm and -5mm of randombiasplus] {C};
   
-  \node[draw=none,below=of randomcontrol] (randombiascontrols) {\includegraphics[width=0.33\textwidth]{elements/randombias_controls}};
-  \node[draw=none,below=0mm of randombiascontrols] {D};
+  \node[draw=none,below=0.5cm of randomcontrol] (randombiascontrols) {\includegraphics[width=0.33\textwidth]{elements/randombias_controls}};
+  \node[draw=none,above left=-5mm and -5mm of randombiascontrols] {D};
   
   \node[draw=none,right=1mm of randombiascontrols] (randombiassmalllesions) {\includegraphics[width=0.33\textwidth]{elements/randombias_smalllesions}};
-  \node[draw=none,below=0mm of randombiassmalllesions] {E};
+  \node[draw=none,above left=-5mm and -5mm of randombiassmalllesions] {E};
   
   \node[draw=none,right=1mm of randombiassmalllesions] (randombiaslesions) {\includegraphics[width=0.33\textwidth]{elements/randombias_lesions}};
-  \node[draw=none,below=0mm of randombiaslesions] {F};
+  \node[draw=none,above left=-5mm and -5mm of randombiaslesions] {F};
 \end{tikzpicture}
 \end{document}
