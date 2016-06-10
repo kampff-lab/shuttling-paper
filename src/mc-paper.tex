@@ -37,7 +37,8 @@
 \affil{Champalimaud Neuroscience Programme\\ Champalimaud Centre for the Unknown, Lisbon, Portugal}
 
 % bibliography
-\usepackage[backend=bibtex,url=false,isbn=false,eprint=false,sorting=none,firstinits=true]{biblatex}
+\usepackage{doi}
+\usepackage[backend=bibtex,url=false,isbn=false,eprint=false,sorting=none,giveninits=true]{biblatex}
 \makeatletter
 \def\blx@maxline{77}
 \makeatother
@@ -59,6 +60,12 @@ The role of motor cortex in the direct control of movement remains unclear, part
 \include{sections/mc-acknowledgements}
 \include{sections/mc-figures}
 \end{linenumbers}
+
+% Allow breaks at numbers and letters for bibliography
+\setcounter{biburlnumpenalty}{100}
+\setcounter{biburlucpenalty}{100}
+\setcounter{biburllcpenalty}{100}
+\hyphenation{Gross-hirns}
 \printbibliography
 
 \end{document}
