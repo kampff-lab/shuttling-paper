@@ -2,7 +2,7 @@
 % Copyright (c) Kampff Lab 2016
 % See README.md for redistribution license
 
-\documentclass[12pt]{article}
+\documentclass[9pt,lineno]{elife}
 \usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
 \usepackage{hyphenat}
@@ -29,30 +29,38 @@
   \refstepcounter{video}\label{#1}%
 }
 
-\renewcommand\Affilfont{\small}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% ARTICLE SETUP
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \title{A robust role for motor cortex}
-\author[1,2,*]{Gonçalo Lopes}
+
+\author[1,2*]{Gonçalo Lopes}
 \author[1,2]{Joana Nogueira}
+\author[1,2]{George Dimitriadis}
+\author[2,3,4]{Jorge Aurelio Menendez}
 \author[1]{Joseph J. Paton}
 \author[1,2]{Adam R. Kampff}
-\affil[1]{Champalimaud Neuroscience Programme, Champalimaud Centre for the Unknown, Lisbon, PT}
-\affil[2]{Sainsbury Wellcome Centre, University College London, London, UK}
-\affil[*]{Correspondence: Gonçalo Lopes, Champalimaud Neuroscience Programme, Champalimaud Centre for the Unknown, Av. de Brasília s/n, Doca de Pedrouços, 1400-038, Lisbon, Portugal. \emph{email}: goncalo.lopes@neuro.fchampalimaud.org}
+\affil[1]{Champalimaud Neuroscience Programme, Champalimaud Centre for the Unknown, Portugal}
+\affil[2]{Sainsbury Wellcome Centre for Neural Circuits and Behaviour, University College London, United Kingdom}
+\affil[3]{Gatsby Computational Neuroscience Unit, University College London, United Kingdom}
+\affil[4]{Centre for Computation, Mathematics and Physics in the Life Sciences and Experimental Biology, University College London, United Kingdom}
+
+\corr{g.lopes@ucl.ac.uk}{}
 
 % bibliography
 \usepackage{doi}
-\usepackage[backend=bibtex,url=false,isbn=false,eprint=false,sorting=none,giveninits=true]{biblatex}
-\makeatletter
-\def\blx@maxline{77}
-\makeatother
-\addbibresource{references.bib}
+\usepackage{csquotes}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% ARTICLE START
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{document}
 \maketitle
 
 \begin{linenumbers}
 \begin{abstract}
-The role of motor cortex in the direct control of movement remains unclear, particularly in non-primate mammals. More than a century of research using stimulation, anatomical and electrophysiological studies has implicated neural activity in this region with all kinds of movement. However, following the removal of motor cortex, or even the entire cortex, rats retain the ability to execute a surprisingly large range of adaptive behaviours, including previously learned skilled movements. In this work we revisit these two conflicting views of motor cortical control by asking what the primordial role of motor cortex is in non-primate mammals, and how it can be effectively assayed. In order to motivate the discussion we present a new assay of behaviour in the rat, challenging animals to produce robust responses to unexpected and unpredictable situations while navigating a dynamic obstacle course. Surprisingly, we found that rats with motor cortical lesions show clear impairments in dealing with an unexpected collapse of the obstacles, while showing virtually no impairment with repeated trials in many other motor and cognitive metrics of performance. We propose a new role for motor cortex: extending the robustness of sub-cortical movement systems, specifically to unexpected situations demanding rapid motor responses adapted to environmental context. The implications of this idea for current and future research are discussed.
+The role of motor cortex in non-primate mammals remains unclear. More than a century of stimulation, anatomical and electrophysiological studies has implicated neural activity in this region with all kinds of movement. However, following the removal of motor cortex, rats retain most of their adaptive behaviours, including previously learned skilled movements. Here we revisit these two conflicting views of motor cortex and present a new behaviour assay, challenging animals to respond to unexpected situations while navigating a dynamic obstacle course. Surprisingly, rats with motor cortical lesions show clear impairments facing an unexpected collapse of the obstacles, while showing no impairment with repeated trials in many motor and cognitive metrics of performance. We propose a new role for motor cortex: extending the robustness of sub-cortical movement systems, specifically to unexpected situations demanding rapid motor responses adapted to environmental context. The implications of this idea for current and future research are discussed.
 \end{abstract}
 
 \include{sections/mc-videos}
@@ -64,11 +72,8 @@ The role of motor cortex in the direct control of movement remains unclear, part
 \include{sections/mc-figures}
 \end{linenumbers}
 
-% Allow breaks at numbers and letters for bibliography
-\setcounter{biburlnumpenalty}{100}
-\setcounter{biburlucpenalty}{100}
-\setcounter{biburllcpenalty}{100}
+% bibliography hyphenation
 \hyphenation{Gross-hirns}
-\printbibliography
+\bibliography{references}
 
 \end{document}

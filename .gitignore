@@ -1,0 +1,12 @@
+*.docx
+*.pdf
+*.xml
+*.aux
+*.log
+elements
+elements_*
+Representative*
+*-blx.bib
+build
+videos
+schematics
